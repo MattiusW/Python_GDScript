@@ -20,4 +20,3 @@ def countAverage(ratingList):
 
 if __name__ == "__main__":
     main()
-    
