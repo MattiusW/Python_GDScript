@@ -14,6 +14,7 @@ def totalCount(table, key):
                 total.append(i)
                 total.append(j)
                 return total
+    return
 
 if __name__ == "__main__":
     main()
