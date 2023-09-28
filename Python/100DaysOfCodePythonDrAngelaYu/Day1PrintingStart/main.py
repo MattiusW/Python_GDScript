@@ -7,3 +7,7 @@ print("Hello " + input("What is your name? "))
 
 # Input and return size of name
 print(len(input("What is your name? ")))
+
+name = input("What is your last name? ")
+length = len(name)
+print(length)
