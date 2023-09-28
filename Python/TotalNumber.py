@@ -3,8 +3,8 @@ def main():
     tab = [3,4,5,1,0,5]
     print(tab)
     findNumber = 10
-    amount = totalCount(tab, findNumber)
-    print(amount)
+    pairs = totalCount(tab, findNumber)
+    print(pairs)
     
 def totalCount(table, key):
     total = []
