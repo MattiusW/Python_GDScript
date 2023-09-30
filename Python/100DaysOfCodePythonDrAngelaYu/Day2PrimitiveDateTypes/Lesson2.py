@@ -33,3 +33,10 @@ print(70 + float("100.5"))
 print(str(70) + str(100))
 
 print(round(2.777, 2))
+
+#f-String
+score = 0
+height = 1.8
+isWinnig = True
+print(f"You'r score is {score}, height is {height}, is winnig? {isWinnig}")
+
