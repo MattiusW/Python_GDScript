@@ -1,8 +1,19 @@
 def main():
     stack = []
     push("Baldur's Gate 3", stack)
+    push("Rage2", stack)
     print(stack)
-   
+    print(emptyStack(stack))
+    print(sizeStack(stack))
+    pop(stack)
+    print(stack)
+    pop(stack)
+    print(stack)
+    print(emptyStack(stack))
+    print(sizeStack(stack))
+    pop(stack)
+    
+
 def push(element, stacks):
     stacks.append(element)
 
