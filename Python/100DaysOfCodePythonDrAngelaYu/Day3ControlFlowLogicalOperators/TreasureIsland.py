@@ -1,39 +1,10 @@
-def main():
-    stack = []
-    push("Baldur's Gate 3", stack)
-    push("Rage2", stack)
-    print(stack)
-    print(emptyStack(stack))
-    print(sizeStack(stack))
-    pop(stack)
-    print(stack)
-    pop(stack)
-    print(stack)
-    print(emptyStack(stack))
-    print(sizeStack(stack))
-    pop(stack)
-    
+A = [2,5,4,3]
 
-def push(element, stacks):
-    stacks.append(element)
-
-def pop(stacks):
-    if (emptyStack(stacks) == False):
-        del stacks[-1]
-    else:
-        print("This is not happen")
-
-def sizeStack(stacks):
-    amount = 0
-    for i in range(len(stacks)):
-        amount += 1
-    return amount
-
-def emptyStack(stacks):
-    if (len(stacks) == 0):
-        return True
-    else:
-        return False
-
-if __name__ == "__main__":
-    main()
+for j in range(1, len(A)):
+    key = A[j]
+    i = j - 1
+    while i >= 0 and A[i] > key:
+        A[i + 1] = A[i]
+        i = i - 1
+    A[i + 1] = key
+print(A)
