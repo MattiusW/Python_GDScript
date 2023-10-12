@@ -11,6 +11,11 @@
 
 states_of_america = ["Delawere", "Pennsylvania", "New Jersey"]
 
+fruits = ["Strawberries", "Nectarines", "Apples", "Peaches"]
+vegetables = ["Spinach", "Kale", "Tomatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
 print(states_of_america[0])
 states_of_america[1] = "Pencilvania"
 # Add to list
@@ -18,3 +23,11 @@ states_of_america.append("Angeland")
  # Add few item to list ["itemOne". "itemTwo"] etc
 states_of_america.extend(["Colorado", "North Dakota", "Montana"])
 print(states_of_america)
+
+# List on List
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)
+
+
