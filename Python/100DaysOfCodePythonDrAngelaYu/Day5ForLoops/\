@@ -57,16 +57,21 @@ for x in range(0, len(easy_solution_password)):
 for y in range(0, how_many_input):
     check_list.append(-1);
 
-while(end_loop < len(easy_solution_password)):
+while(end_loop <= len(easy_solution_password)):
     generate_number = random.randint(0, len(easy_solution_password) - 1)
     if(generate_number not in random_number_check):
         random_number_check.append(generate_number)
         end_loop += 1
 
+print("lenght: ",len(random_number_check))
+print("lenght: ",len(password))
+print("lenght: ",len(easy_solution_password))
+
 for change in random_number_check:
-    password[change] = easy_solution_password[random_number_check[change]]
+    password[change] = easy_solution_password[random_number_check[change - 1]]
 
 for z in password:
     own_password += z
 
 print("Own algorithm password: ", own_password)
+print(random_number_check)
