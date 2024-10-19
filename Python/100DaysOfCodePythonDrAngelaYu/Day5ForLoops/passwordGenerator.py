@@ -31,11 +31,14 @@ for k in range(0, nr_numbers):
     rand_numbers += numbers[random.randint(0, len(numbers) - 1)]
 easy_solution_password += rand_numbers
 
+hard_solution_password = ''.join(random.sample(easy_solution_password, len(easy_solution_password)))
+
 print(rand_letters)
 print(rand_symbols)
 print(rand_numbers)
 print(how_many_input)
 print("Easy solution password is: ", easy_solution_password)
+print("Easy solution password is: ", random.sample(easy_solution_password, len(easy_solution_password)))
 print("Hard solution password is: ", hard_solution_password)
 
 
