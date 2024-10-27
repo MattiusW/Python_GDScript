@@ -18,8 +18,14 @@ def check_letter_in_word(word, guess_word):
 
     while(chance >= 0):
         found = False
+        repeat_word = False
         print("Life: ", chance)
         guess_letter_by_user = input("Pick letter: ").lower()
+
+        for j in new_guess_string:
+            if guess_letter_by_user in new_guess_string:
+                repeat_word = True
+
         for i in range(0, len(word)):
             if guess_letter_by_user == word[i]:
                 guess_word[i] = word[i]
@@ -27,7 +33,7 @@ def check_letter_in_word(word, guess_word):
                 print(f"Guest a letter: {guess_letter_by_user}")
                 found = True
 
-        if not found:
+        if not found or repeat_word == True:
             chance -= 1
 
         elif new_guess_string == check_win:
